@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Sensory Space</title>
+  <link rel="stylesheet" href="style.css">
+
+  </head>
+  <body>
+    <p hidden>
+      <input class="color" id="bgcolor" value="#FFFFFF">
+    </p>
+      
+
+    <h1>Virtual Sensory Space</h1>
+    <h2>Choose your audio type</h2>
+
+    <div class="flex-container">
+
+      <div>
+        <a href="https://jadyn-cleary.github.io/Sensory_Space/noise.html">
+            <img src="images/noise.png" alt="button to enter noise page"/>
+        </a>
+      </div>
+
+      <div>
+        <a href="https://jadyn-cleary.github.io/Sensory_Space/nature.html">
+            <img src="images/nature.png" alt="button to enter nature sounds page"/>
+        </a>
+      </div>
+
+      <div>
+        <a href="https://jadyn-cleary.github.io/Sensory_Space/talking.html">
+            <img src="images/talking.png" alt="button to enter talking page"/>
+        </a>
+      </div>
+
+    </div>
+
+    <div>
+      <p>
+        <button onClick="previous()" 
+                  id="backward"><img style="max-width: 10%;" src ="images/left.png" alt="back button"/>
+          </button>
+        <button onclick="next()" 
+                  id="forward"><img style="max-width: 10%;" src ="images/right.png" alt="forward button"/>
+          </button>
+      </p>
+    </div>
+
+    <script>
+      function next() {
+          window.history.forward();
+      }
+      function previous() {
+          window.history.back();
+      }
+    </script>
+    <script src="Scripts/main.js"></script>
+    <script src="Scripts/jscolor.js"></script>
+  </body>
+  </html>
